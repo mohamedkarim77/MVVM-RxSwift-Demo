@@ -9,14 +9,26 @@
 /* Begin PBXBuildFile section */
 		8A107F7628981EA700A7BE65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F7528981EA700A7BE65 /* AppDelegate.swift */; };
 		8A107F7828981EA700A7BE65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F7728981EA700A7BE65 /* SceneDelegate.swift */; };
-		8A107F7A28981EA700A7BE65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F7928981EA700A7BE65 /* ViewController.swift */; };
-		8A107F7D28981EA700A7BE65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A107F7B28981EA700A7BE65 /* Main.storyboard */; };
 		8A107F8028981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F7E28981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld */; };
 		8A107F8228981EAA00A7BE65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A107F8128981EAA00A7BE65 /* Assets.xcassets */; };
 		8A107F8528981EAA00A7BE65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A107F8328981EAA00A7BE65 /* LaunchScreen.storyboard */; };
 		8A107F9028981EAA00A7BE65 /* MVVM_RxSwift_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F8F28981EAA00A7BE65 /* MVVM_RxSwift_DemoTests.swift */; };
 		8A107F9A28981EAA00A7BE65 /* MVVM_RxSwift_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F9928981EAA00A7BE65 /* MVVM_RxSwift_DemoUITests.swift */; };
 		8A107F9C28981EAA00A7BE65 /* MVVM_RxSwift_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107F9B28981EAA00A7BE65 /* MVVM_RxSwift_DemoUITestsLaunchTests.swift */; };
+		8A107FA9289822F100A7BE65 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107FA8289822F100A7BE65 /* UIViewController + Extension.swift */; };
+		8A107FAC2898237900A7BE65 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 8A107FAB2898237900A7BE65 /* MBProgressHUD */; };
+		8A107FB1289829C500A7BE65 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107FB0289829C500A7BE65 /* ApiService.swift */; };
+		8A107FB428982A0F00A7BE65 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8A107FB328982A0F00A7BE65 /* Alamofire */; };
+		8A107FBC28982B8100A7BE65 /* LoginSuccesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107FBB28982B8100A7BE65 /* LoginSuccesModel.swift */; };
+		8A107FBE28982B9700A7BE65 /* BaseErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107FBD28982B9700A7BE65 /* BaseErrorModel.swift */; };
+		8A107FC128982C1D00A7BE65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107FBF28982C1D00A7BE65 /* LoginViewController.swift */; };
+		8A107FC228982C1D00A7BE65 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A107FC028982C1D00A7BE65 /* LoginViewController.xib */; };
+		8A107FC5289838A400A7BE65 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8A107FC4289838A400A7BE65 /* RxCocoa */; };
+		8A107FC7289838A400A7BE65 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 8A107FC6289838A400A7BE65 /* RxRelay */; };
+		8A107FC9289838A400A7BE65 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8A107FC8289838A400A7BE65 /* RxSwift */; };
+		8A107FCB289838BC00A7BE65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107FCA289838BC00A7BE65 /* LoginViewModel.swift */; };
+		8AB248482899A33100FADA11 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB248462899A33100FADA11 /* HomeViewController.swift */; };
+		8AB248492899A33100FADA11 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB248472899A33100FADA11 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +52,6 @@
 		8A107F7228981EA700A7BE65 /* MVVM-RxSwift-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-RxSwift-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A107F7528981EA700A7BE65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A107F7728981EA700A7BE65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A107F7928981EA700A7BE65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A107F7C28981EA700A7BE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A107F7F28981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_RxSwift_Demo.xcdatamodel; sourceTree = "<group>"; };
 		8A107F8128981EAA00A7BE65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A107F8428981EAA00A7BE65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +61,15 @@
 		8A107F9528981EAA00A7BE65 /* MVVM-RxSwift-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-RxSwift-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A107F9928981EAA00A7BE65 /* MVVM_RxSwift_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_RxSwift_DemoUITests.swift; sourceTree = "<group>"; };
 		8A107F9B28981EAA00A7BE65 /* MVVM_RxSwift_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_RxSwift_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A107FA8289822F100A7BE65 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		8A107FB0289829C500A7BE65 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		8A107FBB28982B8100A7BE65 /* LoginSuccesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccesModel.swift; sourceTree = "<group>"; };
+		8A107FBD28982B9700A7BE65 /* BaseErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorModel.swift; sourceTree = "<group>"; };
+		8A107FBF28982C1D00A7BE65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A107FC028982C1D00A7BE65 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8A107FCA289838BC00A7BE65 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8AB248462899A33100FADA11 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8AB248472899A33100FADA11 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A107FC5289838A400A7BE65 /* RxCocoa in Frameworks */,
+				8A107FAC2898237900A7BE65 /* MBProgressHUD in Frameworks */,
+				8A107FC9289838A400A7BE65 /* RxSwift in Frameworks */,
+				8A107FC7289838A400A7BE65 /* RxRelay in Frameworks */,
+				8A107FB428982A0F00A7BE65 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,14 +125,9 @@
 		8A107F7428981EA700A7BE65 /* MVVM-RxSwift-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				8A107F7528981EA700A7BE65 /* AppDelegate.swift */,
-				8A107F7728981EA700A7BE65 /* SceneDelegate.swift */,
-				8A107F7928981EA700A7BE65 /* ViewController.swift */,
-				8A107F7B28981EA700A7BE65 /* Main.storyboard */,
-				8A107F8128981EAA00A7BE65 /* Assets.xcassets */,
-				8A107F8328981EAA00A7BE65 /* LaunchScreen.storyboard */,
-				8A107F8628981EAA00A7BE65 /* Info.plist */,
-				8A107F7E28981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld */,
+				8A107FB528982A4300A7BE65 /* Features */,
+				8A107FAF2898299D00A7BE65 /* Services */,
+				8A107FAE2898254D00A7BE65 /* Shared */,
 			);
 			path = "MVVM-RxSwift-Demo";
 			sourceTree = "<group>";
@@ -130,6 +149,106 @@
 			path = "MVVM-RxSwift-DemoUITests";
 			sourceTree = "<group>";
 		};
+		8A107FAE2898254D00A7BE65 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8A107F7528981EA700A7BE65 /* AppDelegate.swift */,
+				8A107F7728981EA700A7BE65 /* SceneDelegate.swift */,
+				8A107F8128981EAA00A7BE65 /* Assets.xcassets */,
+				8A107F8328981EAA00A7BE65 /* LaunchScreen.storyboard */,
+				8A107F8628981EAA00A7BE65 /* Info.plist */,
+				8A107F7E28981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld */,
+				8A107FA8289822F100A7BE65 /* UIViewController + Extension.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8A107FAF2898299D00A7BE65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A107FB0289829C500A7BE65 /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A107FB528982A4300A7BE65 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8A107FB728982A6400A7BE65 /* Home */,
+				8A107FB628982A4E00A7BE65 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8A107FB628982A4E00A7BE65 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8A107FBA28982AFF00A7BE65 /* Model */,
+				8A107FB828982AD500A7BE65 /* View */,
+				8A107FB928982ADF00A7BE65 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8A107FB728982A6400A7BE65 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8AB248452899A31500FADA11 /* Model */,
+				8AB248442899A30B00FADA11 /* View */,
+				8AB248432899A2FF00FADA11 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8A107FB828982AD500A7BE65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A107FBF28982C1D00A7BE65 /* LoginViewController.swift */,
+				8A107FC028982C1D00A7BE65 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A107FB928982ADF00A7BE65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A107FCA289838BC00A7BE65 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8A107FBA28982AFF00A7BE65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A107FBB28982B8100A7BE65 /* LoginSuccesModel.swift */,
+				8A107FBD28982B9700A7BE65 /* BaseErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8AB248432899A2FF00FADA11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8AB248442899A30B00FADA11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AB248462899A33100FADA11 /* HomeViewController.swift */,
+				8AB248472899A33100FADA11 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AB248452899A31500FADA11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +265,13 @@
 			dependencies = (
 			);
 			name = "MVVM-RxSwift-Demo";
+			packageProductDependencies = (
+				8A107FAB2898237900A7BE65 /* MBProgressHUD */,
+				8A107FB328982A0F00A7BE65 /* Alamofire */,
+				8A107FC4289838A400A7BE65 /* RxCocoa */,
+				8A107FC6289838A400A7BE65 /* RxRelay */,
+				8A107FC8289838A400A7BE65 /* RxSwift */,
+			);
 			productName = "MVVM-RxSwift-Demo";
 			productReference = 8A107F7228981EA700A7BE65 /* MVVM-RxSwift-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +344,11 @@
 				Base,
 			);
 			mainGroup = 8A107F6928981EA700A7BE65;
+			packageReferences = (
+				8A107FAA2898237800A7BE65 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				8A107FB228982A0F00A7BE65 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8A107FC3289838A400A7BE65 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 8A107F7328981EA700A7BE65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +367,8 @@
 			files = (
 				8A107F8528981EAA00A7BE65 /* LaunchScreen.storyboard in Resources */,
 				8A107F8228981EAA00A7BE65 /* Assets.xcassets in Resources */,
-				8A107F7D28981EA700A7BE65 /* Main.storyboard in Resources */,
+				8A107FC228982C1D00A7BE65 /* LoginViewController.xib in Resources */,
+				8AB248492899A33100FADA11 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +393,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A107F7A28981EA700A7BE65 /* ViewController.swift in Sources */,
+				8A107FC128982C1D00A7BE65 /* LoginViewController.swift in Sources */,
+				8A107FA9289822F100A7BE65 /* UIViewController + Extension.swift in Sources */,
+				8A107FB1289829C500A7BE65 /* ApiService.swift in Sources */,
 				8A107F7628981EA700A7BE65 /* AppDelegate.swift in Sources */,
 				8A107F8028981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld in Sources */,
+				8AB248482899A33100FADA11 /* HomeViewController.swift in Sources */,
+				8A107FBE28982B9700A7BE65 /* BaseErrorModel.swift in Sources */,
 				8A107F7828981EA700A7BE65 /* SceneDelegate.swift in Sources */,
+				8A107FBC28982B8100A7BE65 /* LoginSuccesModel.swift in Sources */,
+				8A107FCB289838BC00A7BE65 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +439,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8A107F7B28981EA700A7BE65 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A107F7C28981EA700A7BE65 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A107F8328981EAA00A7BE65 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,10 +573,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9A7U2T7RW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-RxSwift-Demo/Info.plist";
+				INFOPLIST_FILE = "MVVM-RxSwift-Demo/Shared/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,10 +600,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9A7U2T7RW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "MVVM-RxSwift-Demo/Info.plist";
+				INFOPLIST_FILE = "MVVM-RxSwift-Demo/Shared/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,6 +734,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A107FAA2898237800A7BE65 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		8A107FB228982A0F00A7BE65 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8A107FC3289838A400A7BE65 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A107FAB2898237900A7BE65 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A107FAA2898237800A7BE65 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		8A107FB328982A0F00A7BE65 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A107FB228982A0F00A7BE65 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8A107FC4289838A400A7BE65 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A107FC3289838A400A7BE65 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8A107FC6289838A400A7BE65 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A107FC3289838A400A7BE65 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		8A107FC8289838A400A7BE65 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A107FC3289838A400A7BE65 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8A107F7E28981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld */ = {
