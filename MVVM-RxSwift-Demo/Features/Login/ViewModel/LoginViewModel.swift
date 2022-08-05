@@ -17,7 +17,8 @@ class LoginViewModel {
     
     var loadingBehavior = BehaviorRelay<Bool>(value: false)
     var loginModelSubject = PublishSubject<LoginSuccessModel>()
-    var loginModelObservable: Observable<LoginSuccessModel>{
+    
+    var loginModelObservable: Observable<LoginSuccessModel> {
         return loginModelSubject
     }
     
@@ -45,13 +46,12 @@ class LoginViewModel {
     func getData() {
         loadingBehavior.accept(true)
         let params = [
-            "phone": phoneBehavior.value,
+            "email": phoneBehavior.value,
             "password": codeBehavior.value,
-            "player_id": "a0fb941c-ba42-450d-9a09-4e38258f5adb"
         ]
-        let headers: HTTPHeaders? = ["Content-Type": "application/json"]
+       // let headers: HTTPHeaders? = ["Content-Type": "application/json", "X-FakeAPI-Action": "register"]
         
-        APIServices.instance.getData(url: "https://domain.free.beeceptor.com", method: .post, params: params, encoding: JSONEncoding.default, headers: headers) { [weak self] (loginSuccessModel: LoginSuccessModel?, baseErrorModel: BaseErrorModel?, error) in
+        APIServices.instance.getData(url: "https://reqres.in/api/register", method: .post, params: params, encoding: JSONEncoding.default, headers: nil) { [weak self] (loginSuccessModel: LoginSuccessModel?, baseErrorModel: BaseErrorModel?, error) in
             guard let self = self else{return}
             self.loadingBehavior.accept(false)
             if let error = error {
@@ -61,6 +61,7 @@ class LoginViewModel {
             } else {
                 guard let loginSuccessModel = loginSuccessModel else { return }
                 self.loginModelSubject.onNext(loginSuccessModel)
+                UserDefaults.standard.setValue(loginSuccessModel.token, forKey: "TOKEN")
             }
         }
     }

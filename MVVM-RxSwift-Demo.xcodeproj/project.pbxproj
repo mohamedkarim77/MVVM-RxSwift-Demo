@@ -29,6 +29,14 @@
 		8A107FCB289838BC00A7BE65 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107FCA289838BC00A7BE65 /* LoginViewModel.swift */; };
 		8AB248482899A33100FADA11 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB248462899A33100FADA11 /* HomeViewController.swift */; };
 		8AB248492899A33100FADA11 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AB248472899A33100FADA11 /* HomeViewController.xib */; };
+		8AFD11C6289D324F00D30FE5 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD11C5289D324F00D30FE5 /* UsersModel.swift */; };
+		8AFD11C8289D328E00D30FE5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD11C7289D328E00D30FE5 /* HomeViewModel.swift */; };
+		8AFD11CB289D556900D30FE5 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD11C9289D556900D30FE5 /* HomeTableViewCell.swift */; };
+		8AFD11CC289D556900D30FE5 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AFD11CA289D556900D30FE5 /* HomeTableViewCell.xib */; };
+		8AFD11CE289D5AE700D30FE5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD11CD289D5AE700D30FE5 /* UIImageView+Extensions.swift */; };
+		8AFD11D1289D5B4100D30FE5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFD11D0289D5B4100D30FE5 /* Kingfisher */; };
+		8AFD11D4289D7D6000D30FE5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD11D2289D7D6000D30FE5 /* DetailsViewController.swift */; };
+		8AFD11D5289D7D6000D30FE5 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AFD11D3289D7D6000D30FE5 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +78,13 @@
 		8A107FCA289838BC00A7BE65 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8AB248462899A33100FADA11 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8AB248472899A33100FADA11 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8AFD11C5289D324F00D30FE5 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		8AFD11C7289D328E00D30FE5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8AFD11C9289D556900D30FE5 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8AFD11CA289D556900D30FE5 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		8AFD11CD289D5AE700D30FE5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		8AFD11D2289D7D6000D30FE5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8AFD11D3289D7D6000D30FE5 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFD11D1289D5B4100D30FE5 /* Kingfisher in Frameworks */,
 				8A107FC5289838A400A7BE65 /* RxCocoa in Frameworks */,
 				8A107FAC2898237900A7BE65 /* MBProgressHUD in Frameworks */,
 				8A107FC9289838A400A7BE65 /* RxSwift in Frameworks */,
@@ -159,6 +175,7 @@
 				8A107F8628981EAA00A7BE65 /* Info.plist */,
 				8A107F7E28981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld */,
 				8A107FA8289822F100A7BE65 /* UIViewController + Extension.swift */,
+				8AFD11CD289D5AE700D30FE5 /* UIImageView+Extensions.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -229,6 +246,7 @@
 		8AB248432899A2FF00FADA11 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8AFD11C7289D328E00D30FE5 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -238,6 +256,10 @@
 			children = (
 				8AB248462899A33100FADA11 /* HomeViewController.swift */,
 				8AB248472899A33100FADA11 /* HomeViewController.xib */,
+				8AFD11C9289D556900D30FE5 /* HomeTableViewCell.swift */,
+				8AFD11CA289D556900D30FE5 /* HomeTableViewCell.xib */,
+				8AFD11D2289D7D6000D30FE5 /* DetailsViewController.swift */,
+				8AFD11D3289D7D6000D30FE5 /* DetailsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +267,7 @@
 		8AB248452899A31500FADA11 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8AFD11C5289D324F00D30FE5 /* UsersModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +294,7 @@
 				8A107FC4289838A400A7BE65 /* RxCocoa */,
 				8A107FC6289838A400A7BE65 /* RxRelay */,
 				8A107FC8289838A400A7BE65 /* RxSwift */,
+				8AFD11D0289D5B4100D30FE5 /* Kingfisher */,
 			);
 			productName = "MVVM-RxSwift-Demo";
 			productReference = 8A107F7228981EA700A7BE65 /* MVVM-RxSwift-Demo.app */;
@@ -348,6 +372,7 @@
 				8A107FAA2898237800A7BE65 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				8A107FB228982A0F00A7BE65 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				8A107FC3289838A400A7BE65 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				8AFD11CF289D5B4100D30FE5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 8A107F7328981EA700A7BE65 /* Products */;
 			projectDirPath = "";
@@ -369,6 +394,8 @@
 				8A107F8228981EAA00A7BE65 /* Assets.xcassets in Resources */,
 				8A107FC228982C1D00A7BE65 /* LoginViewController.xib in Resources */,
 				8AB248492899A33100FADA11 /* HomeViewController.xib in Resources */,
+				8AFD11CC289D556900D30FE5 /* HomeTableViewCell.xib in Resources */,
+				8AFD11D5289D7D6000D30FE5 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,12 +424,17 @@
 				8A107FA9289822F100A7BE65 /* UIViewController + Extension.swift in Sources */,
 				8A107FB1289829C500A7BE65 /* ApiService.swift in Sources */,
 				8A107F7628981EA700A7BE65 /* AppDelegate.swift in Sources */,
+				8AFD11CB289D556900D30FE5 /* HomeTableViewCell.swift in Sources */,
+				8AFD11C6289D324F00D30FE5 /* UsersModel.swift in Sources */,
 				8A107F8028981EA700A7BE65 /* MVVM_RxSwift_Demo.xcdatamodeld in Sources */,
 				8AB248482899A33100FADA11 /* HomeViewController.swift in Sources */,
+				8AFD11CE289D5AE700D30FE5 /* UIImageView+Extensions.swift in Sources */,
+				8AFD11C8289D328E00D30FE5 /* HomeViewModel.swift in Sources */,
 				8A107FBE28982B9700A7BE65 /* BaseErrorModel.swift in Sources */,
 				8A107F7828981EA700A7BE65 /* SceneDelegate.swift in Sources */,
 				8A107FBC28982B8100A7BE65 /* LoginSuccesModel.swift in Sources */,
 				8A107FCB289838BC00A7BE65 /* LoginViewModel.swift in Sources */,
+				8AFD11D4289D7D6000D30FE5 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +792,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		8AFD11CF289D5B4100D30FE5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -787,6 +827,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8A107FC3289838A400A7BE65 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		8AFD11D0289D5B4100D30FE5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AFD11CF289D5B4100D30FE5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 

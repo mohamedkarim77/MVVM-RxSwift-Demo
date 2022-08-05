@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
     let loginViewModel = LoginViewModel()
     let disposeBag = DisposeBag()
     
@@ -44,8 +45,9 @@ class LoginViewController: UIViewController {
     
     func subscribeToResponse() {
         loginViewModel.loginModelObservable.subscribe(onNext: { loginSuccessModel in
-            if loginSuccessModel.statusCode == 200 {
+            if loginSuccessModel.token != nil {
                 let vc = HomeViewController()
+                vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true)
             }
         }).disposed(by: disposeBag)
@@ -64,4 +66,5 @@ class LoginViewController: UIViewController {
     func subscribeLoginEnabled() {
         loginViewModel.isLoginEnabled.bind(to: loginButton.rx.isEnabled).disposed(by: disposeBag)
     }
+    
 }
