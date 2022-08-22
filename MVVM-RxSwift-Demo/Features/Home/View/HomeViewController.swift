@@ -56,7 +56,8 @@ class HomeViewController: UIViewController {
     func bindToTableHidden() {
         homeViewModel
             .isTableHiddenObservable
-            .bind(to: usersTableView.rx.isHidden)
+            .bind(to: usersTableView
+                .rx.isHidden)
             .disposed(by: disposeBag)
     }
     
@@ -66,9 +67,9 @@ class HomeViewController: UIViewController {
             .bind(to: usersTableView
                 .rx
                 .items(cellIdentifier: cellID, cellType: HomeTableViewCell.self)) { row, user, cell in
-                cell.configureCell(userData: user)
-            }
-            .disposed(by: disposeBag)
+                    cell.configureCell(userData: user)
+                }
+                .disposed(by: disposeBag)
     }
     
     func bindToBranchSelection() {

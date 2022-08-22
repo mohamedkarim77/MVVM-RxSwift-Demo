@@ -13,13 +13,13 @@ import Alamofire
 class HomeViewModel {
     
     var loadingBehavior = BehaviorRelay<Bool>(value: false)
-    private var isTableHidden = BehaviorRelay<Bool>(value: false)
-    private var usersModelSubject = PublishSubject<[UserData]>()
     
+    private var isTableHidden = BehaviorRelay<Bool>(value: false)
     var isTableHiddenObservable: Observable<Bool> {
         return isTableHidden.asObservable()
     }
     
+    private var usersModelSubject = PublishSubject<[UserData]>()
     var usersModelObservable: Observable<[UserData]> {
         return usersModelSubject.asObservable()
     }
