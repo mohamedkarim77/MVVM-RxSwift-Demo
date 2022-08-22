@@ -20,10 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func configureAppStart(scene: UIWindowScene) {
         let loginVC = LoginViewController()
         let homeVC = HomeViewController()
-        let navigation = UINavigationController(rootViewController: homeVC)
+       // let homeNavigation = UINavigationController(rootViewController: homeVC)
+       // let loginNavigation = UINavigationController(rootViewController: loginVC)
         let token = UserDefaults.standard.string(forKey: "TOKEN")
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = token == nil ? loginVC : navigation
+        window?.rootViewController = token == nil ? loginVC : homeVC
         window?.makeKeyAndVisible()
     }
 

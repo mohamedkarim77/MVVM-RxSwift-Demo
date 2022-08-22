@@ -16,8 +16,8 @@ class LoginViewModel {
     var codeBehavior = BehaviorRelay<String>(value: "")
     
     var loadingBehavior = BehaviorRelay<Bool>(value: false)
-    var loginModelSubject = PublishSubject<LoginSuccessModel>()
     
+    var loginModelSubject = PublishSubject<LoginSuccessModel>()
     var loginModelObservable: Observable<LoginSuccessModel> {
         return loginModelSubject
     }

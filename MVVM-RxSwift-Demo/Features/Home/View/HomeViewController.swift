@@ -63,7 +63,9 @@ class HomeViewController: UIViewController {
     func bindToResponse() {
         homeViewModel
             .usersModelObservable
-            .bind(to: usersTableView.rx.items(cellIdentifier: cellID, cellType: HomeTableViewCell.self)) { row, user, cell in
+            .bind(to: usersTableView
+                .rx
+                .items(cellIdentifier: cellID, cellType: HomeTableViewCell.self)) { row, user, cell in
                 cell.configureCell(userData: user)
             }
             .disposed(by: disposeBag)

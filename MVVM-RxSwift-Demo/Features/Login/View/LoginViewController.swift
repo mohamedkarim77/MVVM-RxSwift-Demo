@@ -28,12 +28,17 @@ class LoginViewController: UIViewController {
     }
     
     func bindTextFieldsToViewModel() {
-        phoneTextField.rx.text.orEmpty.bind(to: loginViewModel.phoneBehavior).disposed(by: disposeBag)
-        codeTextField.rx.text.orEmpty.bind(to: loginViewModel.codeBehavior).disposed(by: disposeBag)
+        phoneTextField.rx.text.orEmpty
+            .bind(to: loginViewModel.phoneBehavior)
+            .disposed(by: disposeBag)
+        codeTextField.rx.text.orEmpty
+            .bind(to: loginViewModel.codeBehavior)
+            .disposed(by: disposeBag)
     }
     
     func subscribeToLoading() {
-        loginViewModel.loadingBehavior.subscribe(onNext: { (loading) in
+        loginViewModel.loadingBehavior
+            .subscribe(onNext: { loading in
             if loading {
                 self.showIndicator(withTitle: "", and: "")
             }else {
@@ -44,17 +49,22 @@ class LoginViewController: UIViewController {
     }
     
     func subscribeToResponse() {
-        loginViewModel.loginModelObservable.subscribe(onNext: { loginSuccessModel in
+        loginViewModel.loginModelObservable
+            .subscribe(onNext: { loginSuccessModel in
             if loginSuccessModel.token != nil {
                 let vc = HomeViewController()
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true)
+                let homeNavigation = UINavigationController(rootViewController: vc)
+                homeNavigation.modalPresentationStyle = .fullScreen
+                self.present(homeNavigation, animated: true)
             }
-        }).disposed(by: disposeBag)
+        })
+            .disposed(by: disposeBag)
     }
     
     func subscribeToLoginButton() {
-        loginButton.rx.tap
+        loginButton
+            .rx
+            .tap
             .throttle(RxTimeInterval.microseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext:  { [weak self] _ in
                 guard let self = self else { return }
@@ -64,7 +74,9 @@ class LoginViewController: UIViewController {
     }
     
     func subscribeLoginEnabled() {
-        loginViewModel.isLoginEnabled.bind(to: loginButton.rx.isEnabled).disposed(by: disposeBag)
+        loginViewModel.isLoginEnabled
+            .bind(to: loginButton.rx.isEnabled
+            ).disposed(by: disposeBag)
     }
     
 }
