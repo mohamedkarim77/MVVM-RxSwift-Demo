@@ -7,9 +7,10 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var usersContainerView: UIView!
     @IBOutlet weak var usersTableView: UITableView!{
         didSet{
@@ -27,7 +28,7 @@ class HomeViewController: UIViewController {
         subscribeToLoadingBehavior()
         bindToTableHidden()
         bindToResponse()
-       // bindToBranchSelection()
+        bindToBranchSelection()
     }
     
     func registerCell(_ id: String) {
@@ -39,35 +40,45 @@ class HomeViewController: UIViewController {
     }
     
     func subscribeToLoadingBehavior() {
-        homeViewModel.loadingBehavior.subscribe(onNext: { [weak self] isLoading in
-            guard let self = self else { return }
-            if isLoading {
-                self.showIndicator(withTitle: "", and: "")
-            }else {
-                self.hideIndicator()
-            }
-        }).disposed(by: disposeBag)
+        homeViewModel
+            .loadingBehavior
+            .subscribe(onNext: { [weak self] isLoading in
+                guard let self = self else { return }
+                if isLoading {
+                    self.showIndicator(withTitle: "", and: "")
+                }else {
+                    self.hideIndicator()
+                }
+            })
+            .disposed(by: disposeBag)
     }
     
     func bindToTableHidden() {
-        homeViewModel.isTableHiddenObservable.bind(to: usersTableView.rx.isHidden).disposed(by: disposeBag)
+        homeViewModel
+            .isTableHiddenObservable
+            .bind(to: usersTableView.rx.isHidden)
+            .disposed(by: disposeBag)
     }
     
     func bindToResponse() {
-        homeViewModel.usersModelObservable.bind(to: usersTableView.rx.items(cellIdentifier: cellID, cellType: HomeTableViewCell.self)) { row, user, cell in
-            cell.configureCell(userData: user)
-        }.disposed(by: disposeBag)
+        homeViewModel
+            .usersModelObservable
+            .bind(to: usersTableView.rx.items(cellIdentifier: cellID, cellType: HomeTableViewCell.self)) { row, user, cell in
+                cell.configureCell(userData: user)
+            }
+            .disposed(by: disposeBag)
     }
     
-//    func bindToBranchSelection() {
-//        Observable
-//            .zip(usersTableView.rx.itemSelected, usersTableView.rx.modelSelected(UserData.self))
-//            .bind { [weak self] selectedIndex, user in
-//                guard let self = self else { return }
-//                print(selectedIndex, user.email ?? "")
-//                let vc = DetailsViewController()
-//                vc.configure(userData: user)
-//                self.navigationController?.pushViewController(vc, animated: true)
-//            }.disposed(by: disposeBag)
-//    }
+    func bindToBranchSelection() {
+        usersTableView
+            .rx
+            .modelSelected(UserData.self)
+            .subscribe(onNext: { [weak self] user in
+                guard let self = self else { return }
+                let viewModel = DetailsViewModel(userData: user)
+                let vc = DetailsViewController(viewModel: viewModel)
+                self.navigationController?.pushViewController(vc, animated: true)
+            })
+            .disposed(by: disposeBag)
+    }
 }

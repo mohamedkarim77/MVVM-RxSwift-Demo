@@ -37,6 +37,7 @@
 		8AFD11D1289D5B4100D30FE5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8AFD11D0289D5B4100D30FE5 /* Kingfisher */; };
 		8AFD11D4289D7D6000D30FE5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD11D2289D7D6000D30FE5 /* DetailsViewController.swift */; };
 		8AFD11D5289D7D6000D30FE5 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AFD11D3289D7D6000D30FE5 /* DetailsViewController.xib */; };
+		8AFD11D7289D92D700D30FE5 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD11D6289D92D700D30FE5 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		8AFD11CD289D5AE700D30FE5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		8AFD11D2289D7D6000D30FE5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		8AFD11D3289D7D6000D30FE5 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		8AFD11D6289D92D700D30FE5 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				8AFD11C7289D328E00D30FE5 /* HomeViewModel.swift */,
+				8AFD11D6289D92D700D30FE5 /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				8A107FC128982C1D00A7BE65 /* LoginViewController.swift in Sources */,
 				8A107FA9289822F100A7BE65 /* UIViewController + Extension.swift in Sources */,
 				8A107FB1289829C500A7BE65 /* ApiService.swift in Sources */,
+				8AFD11D7289D92D700D30FE5 /* DetailsViewModel.swift in Sources */,
 				8A107F7628981EA700A7BE65 /* AppDelegate.swift in Sources */,
 				8AFD11CB289D556900D30FE5 /* HomeTableViewCell.swift in Sources */,
 				8AFD11C6289D324F00D30FE5 /* UsersModel.swift in Sources */,
